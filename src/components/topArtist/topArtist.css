@@ -1,0 +1,85 @@
+
+
+.roundcard{
+    margin-top: 25px;
+    text-align: center;
+   margin-left: 30px;
+    
+}
+.roundcard img{
+    width: 117px;
+    height: 117px;
+    border-radius: 50%;
+
+}
+.roundcard p{
+    font-size: 13px;
+    white-space: nowrap; 
+    width: 117px;
+   
+    overflow: hidden;
+   text-overflow: ellipsis;
+    
+}
+.roundcard h4{
+    width: 117px;
+    font-weight: 500;
+
+    font-size: 14px;
+    white-space: nowrap; 
+    overflow: hidden;
+   text-overflow: ellipsis;
+}
+.artist-caro{
+    width: 80%;
+    /* margin-left: 18%; */
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.artist-container{
+    padding-top: 50px;
+    margin-left: 18%;
+}
+.roundcard:hover{
+    .roundcard-hovercontent{
+        display: grid;
+        place-items: center;
+       position: absolute;
+        top: 0;
+        left: 0; 
+        transition: opacity .3s ease-in-out;   
+        z-index: 1;
+    }
+}
+.roundcard{
+    position: relative;
+}
+.roundcard-hovercontent{
+    display: none;
+    position: absolute;
+    width: 117px;
+    height: 117px;
+    background: rgba(0,0,0,.7);
+    border-radius: 50%;
+    transition: opacity .3s ease-in-out;   
+    z-index: 1;
+    left: 18px;
+}
+@media  screen and (max-width: 600px) {
+    .artist-container{
+        width: 100%;
+        margin-left: 0;
+        
+    }
+    .artist-container h1{
+        margin-left: 15px;
+        font-size: 1.3rem;
+    }
+    .artist-caro{
+        width: 100%;
+        display: grid;
+        padding-top: 10px;
+        grid-template-columns: 1fr 1fr ;
+     }
+}

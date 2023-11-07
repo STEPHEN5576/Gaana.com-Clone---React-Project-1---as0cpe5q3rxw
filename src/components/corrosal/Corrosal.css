@@ -1,0 +1,82 @@
+
+/* .react-multi-carousel-list{
+    width: 92%;
+    margin-left: 15px;
+}  */
+
+
+.react-multiple-carousel__arrow {
+    z-index: 500;
+}
+.corrosal-card{
+    width: 100%;
+    /* margin-left: 18%; */
+    /* padding-top: 40px; */
+}
+.card{
+    width: 117px;
+    margin-top: 25px;
+    text-align: center;
+    /* padding-left: 10px; */
+   
+}
+
+.card img{
+    width: 117px;
+    height: 117px;
+    border-radius: 5px;
+    
+}
+.card p{
+    font-size: 13px;
+    white-space: nowrap; 
+    width: 117px;
+   
+    overflow: hidden;
+   text-overflow: ellipsis;
+   
+    
+}
+.card h4{
+    width: 120px;
+    font-weight: 500;
+  
+    font-size: 14px;
+    white-space: nowrap; 
+    overflow: hidden;
+   text-overflow: ellipsis;
+}
+.trending-list{
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .card img{
+        width: 117px;
+        height: 117px;
+        border-radius: 5px;
+    }
+
+
+    .react-multiple-carousel__arrow {
+        display: none;
+    }
+    .react-multi-carousel-track {
+        width: 100%;
+    
+    }
+    .react-multi-carousel-list{
+        width: 100%;
+       
+    }
+    .card{
+        text-align: center;     
+       width: 147px;
+    }
+    .corrosal-card{
+        width: 100%;
+   
+    }
+  
+
+}
