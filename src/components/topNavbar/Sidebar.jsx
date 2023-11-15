@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import DehazeIcon from "@mui/icons-material/Dehaze";
-import { useEffect, useState } from "react";
+import CloseIcon from "@mui/icons-material/Close";
+import { Link } from "react-router-dom";
 import "./Sidebar.css";
+
 function SideBar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {}, [isOpen]);
+  const closeSidebar = () => {
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    // You can add any side effect logic here if needed
+  }, [isOpen]);
 
   return (
     <>
@@ -13,21 +21,31 @@ function SideBar() {
         <DehazeIcon />
       </div>
       <div className={`sidebar ${isOpen ? "open" : ""}`}>
-        <div className="toggle-button" onClick={() => setIsOpen(!isOpen)}>
-          <DehazeIcon />
+        <div className="toggle-buttons" onClick={() => setIsOpen(!isOpen)}>
+          <div className="close-button">
+            <CloseIcon />
+          </div>
         </div>
         <ul className="nav-links">
           <li>
-            <a href="/">Home</a>
+            <Link to="/" onClick={closeSidebar}>
+              Home
+            </Link>
           </li>
           <li>
-            <a href="/podcast">Podcasts</a>
+            <Link to="/podcast" onClick={closeSidebar}>
+              Podcasts
+            </Link>
           </li>
           <li>
-            <a href="/my-music">My Library</a>
+            <Link to="/my-music" onClick={closeSidebar}>
+              My Library
+            </Link>
           </li>
           <li>
-            <a href="/premium">Get Premium</a>
+            <Link to="/premium" onClick={closeSidebar}>
+              Get Premium
+            </Link>
           </li>
         </ul>
       </div>

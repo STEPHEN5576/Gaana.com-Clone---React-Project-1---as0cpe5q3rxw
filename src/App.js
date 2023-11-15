@@ -42,8 +42,9 @@ function App() {
             <Route path="/newrelease" element={<NewReleases />} />
             <Route path="/topchart" element={<TopChart />} />
             <Route path="/topplaylist" element={<TopPlayList />} />
-
             <Route path="/podcast" element={<ComingSoonPage />} />
+            <Route path="/dropdown" element={<ComingSoonPage />} />
+            <Route path="/old-songs" element={<ComingSoonPage />} />
             <Route path="/topartist" element={<TopArtist />} />
             <Route path="/radio" element={<ComingSoonPage />} />
             <Route path="/my-music" element={<FavoriteSection />} />
