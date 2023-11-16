@@ -167,9 +167,6 @@ function SignUp(){
                     </div> */}
           </div>
         </div>
-        <Link to="/">
-          <img className="jio-logo-log" src={jioMobileLogo} alt="log-logo" />
-        </Link>
       </div>
     );
 }

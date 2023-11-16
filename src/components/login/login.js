@@ -139,11 +139,11 @@ function LoginPage(){
                     </div> */}
                 </div>
             </div>
-            <Link to='/'>
+            {/* <Link to='/'>
                 
                 <img className="jio-logo-log" src={jioMobileLogo} alt="log-logo"/>
         
-                </Link>
+                </Link> */}
                 
         </div>
     )
