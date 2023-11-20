@@ -104,10 +104,10 @@ function LoginPageHover(){
             <div className="loginhover-center-container" onClick={(e)=>handlePropagation(e)} >
             <div className="loginhover-content">
                 <div className="account-toggle">
-                   <p> Don't have a JioSaavn account yet?</p><span className="toggle-btn" onClick={(e)=>handleLoginInstant(e)}>Sign Up</span>
+                   <p> Don't have a Gaana account yet?</p><span className="toggle-btn" onClick={(e)=>handleLoginInstant(e)}>Sign Up</span>
                 </div>
                 <div className="hoverlogin-form">
-                    <h1>Welcome to JioSaavn.</h1>
+                    <h1>Welcome to Gaana.</h1>
                     <p className="loginpara">Log in to create playlists, build your library, get personalized recommendations & more!</p>
                     <div className={error?"errorBox":"hiddenBox"}>{message}</div>
                     <input className="loginput" type="email" placeholder="Email Address" value={email} onChange={(e)=>(setEmail(e.target.value))} required/>
@@ -127,7 +127,7 @@ function LoginPageHover(){
                     </div>
                     <button className="submit-btn-hover" type="submit" onClick={handleClick}>Continue</button>
                    <Link to="/change-password"><p className="changepassword">Change Password?</p></Link> 
-                    <p className="em">By selecting ‘Continue’, you agree to JioSaavn’s Terms of Service and Privacy Policy.</p>
+                    <p className="em">By selecting ‘Continue’, you agree to Gaana's Terms of Service and Privacy Policy.</p>
                 
                 </div>
             </div>

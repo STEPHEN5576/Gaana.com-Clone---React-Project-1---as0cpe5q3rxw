@@ -93,7 +93,7 @@ function SignUpHover(){
                    <p>Already have an account?</p><span className="toggle-btn" onClick={(e)=>handleLoginInstant(e)}>Log In</span>
                 </div>
                 <div className="hoverlogin-form">
-                    <h1>Welcome to JioSaavn.</h1>
+                    <h1>Welcome to Gaana.</h1>
                     <p className="loginpara">Sign up to create playlists, build your library, get personalized recommendations & more!</p>
                     <div className={error?"errorBox":"hiddenBox"}>{message}</div>
                     <input className="loginput" type="text" placeholder="Username" value={name} onChange={(e)=>(setUserName(e.target.value))}/>
@@ -114,7 +114,7 @@ function SignUpHover(){
                     </div>
                     </div>
                     <button className="submit-btn-hover" type="submit" onClick={handleClick}>Continue</button>
-                    <p className="em">By selecting ‘Continue’, you agree to JioSaavn’s Terms of Service and Privacy Policy.</p>
+                    <p className="em">By selecting ‘Continue’, you agree to Gaana's Terms of Service and Privacy Policy.</p>
                 
                 </div>
             </div>
