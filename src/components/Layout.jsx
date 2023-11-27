@@ -1,6 +1,6 @@
 import React from "react";
 import Topnavbar from "./topNavbar/topNavBar";
-import SideNavbar from "./sideNavbar/sideNavbar";
+// import SideNavbar from "./sideNavbar/sideNavbar";
 import LiveMusic from "./musicBar/musicBar";
 import Footer from "./footer/footer";
 import { useLocation } from "react-router";
@@ -35,10 +35,7 @@ const Layout = ({ children }) => {
       {!pathname.includes("my-music-sec") && <Wrapper />}
       {/* <Wrapper /> */}
       <>
-        {/* {
-          !pathname.includes('/queue') &&
-          <SideNavbar />
-        } */}
+        
         {children}
 
         {!pathname.includes("/queue") && <Footer className="main-page" />}

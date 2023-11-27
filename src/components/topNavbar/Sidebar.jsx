@@ -43,7 +43,7 @@ function SideBar() {
             </Link>
           </li>
           <li>
-            <Link to="/premium" onClick={closeSidebar}>
+            <Link to="/subscription" onClick={closeSidebar}>
               Get Premium
             </Link>
           </li>

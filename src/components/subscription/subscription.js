@@ -120,11 +120,11 @@ function Subscription() {
               </p>
             </div>
             <div>
-              <img
+              {/* <img
                 className="paytm-logo"
                 src="https://static.saavncdn.com/_i/paytm-logo.png"
                 alt="ptmlogo"
-              />
+              /> */}
               <img
                 className="amazon-logo"
                 src="https://static.saavncdn.com/_i/amazonPay-logo.png"
@@ -142,7 +142,6 @@ function Subscription() {
               src="https://seeklogo.com/images/A/apple-logo-E3DBF3AE34-seeklogo.com.png"
             />
             <img src="https://seeklogo.com/images/G/google-play-logo-C0F8C12322-seeklogo.com.png" />
-            <img src="https://seeklogo.com/images/J/jio-logo-3D80D8382D-seeklogo.com.png" />
           </div>
           <h3>
             <em>
@@ -216,7 +215,7 @@ function Subscription() {
                 </td>
               </tr>
               <tr>
-                <td>JioTunes</td>
+                <td>Ganna albums</td>
                 <td id="freeget">
                   <ImCheckmark />
                 </td>
@@ -311,10 +310,6 @@ function Subscription() {
       </div>
       <div className="subs-section-footer">
         <div className="subs-footer-sec">
-          <img
-            src="https://play-lh.googleusercontent.com/gUR8xEKvCngapSZGkZUgoNETAYuhhkCr0Npza-lPSjbRCM55zdS0SK_KxBj1tg2RoQ"
-            width="50px"
-          />
           <div className="subs-footer-container">
             <div className="subs-footer-card">
               <h6>Gaana</h6>
@@ -376,7 +371,7 @@ function Subscription() {
                 <GrYoutube />
               </a>
             </div>
-            <p>© 2023 Saavn Media Pvt Ltd. All rights reserved</p>
+            <p>© 2023 Gaana Media Pvt Ltd. All rights reserved</p>
           </div>
         </div>
         <div className="fill angle"></div>

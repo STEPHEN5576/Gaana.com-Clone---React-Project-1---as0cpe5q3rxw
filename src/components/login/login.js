@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import './login.css';
-// import jioSaavnLogo from '../../assets/jioSaavnLogo.png'
-
-// import jioImage from '../../assets/JioSaavnIcon.png'
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import { useCurrentPlayingContext } from "../../context/currentlyPlayingContext";
-// import jioMobileLogo from '../../assets/JioSaavn Logo on White.png'
+
 function LoginPage(){
 
     const{setLogin,profile,setProfile}=useCurrentPlayingContext();
